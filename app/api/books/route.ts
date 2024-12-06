@@ -1,3 +1,5 @@
+import books from '@/app/api/db';
+
 export async function GET() {
-    return Response.json({ message: "Hello from the server" });
+  return Response.json(books);
 }
